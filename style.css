@@ -9,6 +9,11 @@
 
 body {
   color: #333333;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Heading Styles */
@@ -104,6 +109,10 @@ input[type="range"]:focus::-moz-range-thumb {
 
 .padding-section {
   padding-top: 5.5rem;
+}
+
+.margin-section {
+  margin-top: 5.5rem;
 }
 
 .background-red {
@@ -203,6 +212,13 @@ input[type="range"]:focus::-moz-range-thumb {
     background-repeat: no-repeat, no-repeat;
     background-size: fill;
     background-position: center;
+  }
+
+  #features,
+  #tenor-plans,
+  #process-feedback,
+  #rate-estimation-form {
+    background-image: transparent;
   }
 }
 

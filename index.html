@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet" />
     <link rel="stylesheet" href="./style.css" />
     <title>LOTTE Finance</title>
   </head>
@@ -16,20 +17,22 @@
         <img src="./public/logo.svg" alt="Lotte Finance" />
         <div class="flex gap-10 justify-between items-center">
           <div class="hidden sm:flex gap-6 justify-between items-center">
-            <a href="#features"><h6>Lợi ích</h6></a>
-            <a href="#tenor-plans"><h6>Các gói vay</h6></a>
-            <a href="#process"><h6>Quy trình vay</h6></a>
-            <a href="#feedback"><h6>Khách hàng</h6></a>
-            <a href="#about-us"><h6>Về chúng tôi</h6></a>
-            <a href="#fqa"><h6>Q&A</h6></a>
+            <a href="#anchor-features"><h6>Lợi ích</h6></a>
+            <a href="#anchor-tenor-plans"><h6>Các gói vay</h6></a>
+            <a href="#anchor-process"><h6>Quy trình vay</h6></a>
+            <a href="#anchor-feedback"><h6>Khách hàng</h6></a>
+            <a href="#anchor-about-us"><h6>Về chúng tôi</h6></a>
+            <a href="#anchor-fqa"><h6>Q&A</h6></a>
           </div>
-          <button class="px-5 py-2 background-red text-white rounded-full uppercase">Đăng ký ngay</button>
+          <a class="jump-to-form">
+            <button class="px-5 py-2 background-red text-white rounded-full uppercase">Đăng ký ngay</button></a
+          >
         </div>
       </div>
     </header>
 
     <!-- REGISTER FORM -->
-    <section class="w-full padding-section">
+    <section id="register-form" class="w-full padding-section">
       <div class="relative w-full background-top flex justify-center">
         <div class="container-box flex flex-col pt-[90%] sm:pt-0 sm:flex-row items-center justify-end">
           <div
@@ -80,9 +83,9 @@
                 <div class="flex justify-between items-center">
                   <div class="flex flex-1 p-2 gap-2 items-center">
                     <input
+                      checked
                       id="banking"
                       type="radio"
-                      value=""
                       name="receiving"
                       class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300"
                     />
@@ -92,10 +95,8 @@
                   </div>
                   <div class="flex flex-1 p-2 gap-2 items-center">
                     <input
-                      checked
                       id="transfer"
                       type="radio"
-                      value=""
                       name="receiving"
                       class="w-4 h-4 block text-blue-600 bg-gray-100 border-gray-300"
                     />
@@ -137,6 +138,7 @@
             </form>
           </div>
         </div>
+        <div id="anchor-features" class="absolute bottom-20"></div>
       </div>
     </section>
 
@@ -154,7 +156,7 @@
             <hr class="w-[84px] background-red h-2" />
           </div>
         </div>
-        <div class="container-box flex flex-wrap justify-between gap-3 sm:gap-6 z-10">
+        <div class="container-box flex flex-wrap justify-between gap-3 sm:gap-6 z-20">
           <div
             class="rounded-3xl shadow-lg flex flex-col w-[48%] sm:w-auto sm:flex-1 gap-4 justify-around cursor-pointer hover:bg-gray-50 transition items-center border border-gray-200 pt-5 sm:pt-3 pb-5"
           >
@@ -186,7 +188,7 @@
       </section>
 
       <!-- PROMOTION BANNER -->
-      <section id="promotion" class="flex justify-center items-center">
+      <section id="promotion" class="relative flex justify-center items-center">
         <div class="container-box">
           <img src="./public/promotion.png" class="hidden sm:inline cursor-pointer" alt="Promotion" />
           <img
@@ -195,6 +197,7 @@
             alt="Promotion"
           />
         </div>
+        <div id="anchor-tenor-plans" class="absolute bottom-20"></div>
       </section>
 
       <!-- TENOR PLANS -->
@@ -211,7 +214,7 @@
           >
             <img
               src="./public/plan1.jpeg"
-              class="block rounded-2xl object-cover absolute inset-0 h-full"
+              class="block rounded-2xl absolute inset-0 object-cover h-[60%]"
               alt="Plan 1"
             />
             <div
@@ -239,11 +242,12 @@
                   </div>
                 </div>
                 <hr />
-                <button
-                  class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
-                >
-                  <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" />
-                </button>
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
               </div>
             </div>
           </div>
@@ -252,7 +256,7 @@
           >
             <img
               src="./public/plan2.jpeg"
-              class="block rounded-2xl object-cover absolute inset-0 h-full"
+              class="block rounded-2xl absolute inset-0 object-cover h-full"
               alt="Plan 3"
             />
             <div
@@ -279,11 +283,12 @@
                   </div>
                 </div>
                 <hr />
-                <button
-                  class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
-                >
-                  <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" />
-                </button>
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
               </div>
             </div>
           </div>
@@ -292,7 +297,7 @@
           >
             <img
               src="./public/plan3.jpeg"
-              class="block rounded-2xl object-cover absolute inset-0 h-full"
+              class="block rounded-2xl absolute inset-0 object-cover h-full"
               alt="Plan 3"
             />
             <div
@@ -320,11 +325,12 @@
                   </div>
                 </div>
                 <hr />
-                <button
-                  class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
-                >
-                  <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" />
-                </button>
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
               </div>
             </div>
           </div>
@@ -333,7 +339,7 @@
           >
             <img
               src="./public/plan4.jpeg"
-              class="block rounded-2xl object-cover absolute inset-0 h-full"
+              class="block rounded-2xl absolute inset-0 object-cover h-full"
               alt="Plan 4"
             />
             <div
@@ -361,11 +367,12 @@
                   </div>
                 </div>
                 <hr />
-                <button
-                  class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
-                >
-                  <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" />
-                </button>
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
               </div>
             </div>
           </div>
@@ -374,7 +381,7 @@
           >
             <img
               src="./public/plan5.jpeg"
-              class="block rounded-2xl object-cover absolute inset-0 h-full"
+              class="block rounded-2xl absolute inset-0 object-cover h-full"
               alt="Plan 5"
             />
             <div
@@ -402,11 +409,12 @@
                   </div>
                 </div>
                 <hr />
-                <button
-                  class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
-                >
-                  <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" />
-                </button>
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
               </div>
             </div>
           </div>
@@ -415,7 +423,7 @@
           >
             <img
               src="./public/plan6.jpeg"
-              class="block rounded-2xl object-cover absolute inset-0 h-full"
+              class="block rounded-2xl absolute inset-0 object-cover h-full"
               alt="Plan 6"
             />
             <div
@@ -443,11 +451,12 @@
                   </div>
                 </div>
                 <hr />
-                <button
-                  class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
-                >
-                  <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" />
-                </button>
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
               </div>
             </div>
           </div>
@@ -455,7 +464,7 @@
       </section>
 
       <!-- RATE ESTIMATION -->
-      <section id="rate-estimate" class="hidden sm:block">
+      <section id="rate-estimate" class="relative hidden sm:block">
         <section id="rate-estimation" class="flex flex-col gap-8 justify-between items-center py-6">
           <div class="container-box">
             <div class="rate-estimation-background">
@@ -484,7 +493,7 @@
 
         <section
           id="rate-estimation-form"
-          class="hidden flex-col bg-[#FEE8E8] py-12 gap-8 justify-between items-center"
+          class="relative hidden flex-col bg-[#FEE8E8] py-12 gap-8 justify-between items-center"
         >
           <div class="container-box flex justify-between">
             <div
@@ -548,20 +557,22 @@
                   <span class="font-semibold text-base color-red">*Lưu ý:</span> Kết quả tính toán này chỉ mang tính
                   chất tham khảo và có thể sai lệch nhỏ với kết quả tính toán thực tế
                 </p>
-                <button
-                  class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
-                >
-                  <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" />
-                </button>
+                <a class="jump-to-form">
+                  <button
+                    class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+                  >
+                    <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+                ></a>
               </div>
             </div>
           </div>
         </section>
+        <div id="anchor-process" class="absolute bottom-20"></div>
       </section>
 
       <section id="process-feedback">
         <!-- PROCESS -->
-        <section id="process" class="flex flex-col sm:gap-8 justify-between items-center sm:py-6">
+        <section id="process" class="relative flex flex-col sm:gap-8 justify-between items-center sm:py-6">
           <div class="container-box flex flex-col">
             <div class="flex flex-col gap-5 justify-between items-start">
               <h2 class="font-semibold">Quy trình đăng kí vay</h2>
@@ -623,10 +634,11 @@
               </div>
             </div>
           </div>
+          <div id="anchor-feedback" class="absolute bottom-20"></div>
         </section>
 
         <!-- FEEDBACK -->
-        <section id="feedback" class="flex flex-col sm:gap-8 justify-between items-center pb-6 sm:py-6">
+        <section id="feedback" class="relative flex flex-col sm:gap-8 justify-between items-center pb-6 sm:py-6">
           <div class="container-box flex flex-col">
             <div class="flex flex-col gap-5 justify-between items-start">
               <h2 class="font-semibold">Khách hàng nói về chúng tôi</h2>
@@ -728,11 +740,12 @@
               />
             </button>
           </div>
+          <div id="anchor-about-us" class="absolute bottom-20"></div>
         </section>
       </section>
 
       <!-- ABOUT US -->
-      <section id="about-us" class="bg-[#FFE8E8] flex flex-col sm:gap-8 justify-between items-center">
+      <section id="about-us" class="relative bg-[#FFE8E8] flex flex-col sm:gap-8 justify-between items-center">
         <div class="container-box flex flex-col sm:flex-row justify-between">
           <div class="flex flex-col pb-2 pt-6 sm:py-6 gap-4 sm:gap-5 justify-around items-start">
             <h2 class="font-semibold">Giới thiệu công ty</h2>
@@ -746,15 +759,18 @@
               LOTTE Finance luôn nỗ lực đi đầu thị trường về sự minh bạch trong giao dịch tài chính, nhằm cung cấp những
               sản phẩm, dịch vụ uy tín tới khách hàng và góp phần đẩy lùi tín dụng đen tại Việt Nam.
             </p>
-            <button
-              class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
-            >
-              <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" />
-            </button>
+            <a class="jump-to-form">
+              <button
+                class="px-5 py-2 max-w-fit flex gap-2 items-center justify-between background-red text-white rounded-full"
+              >
+                <span>Đăng ký ngay</span> <img src="./public/arrow_right.svg" alt="Đăng ký ngay" /></button
+            ></a>
           </div>
           <img src="./public/lotte_finance.png" class="hidden sm:inline h-[410px]" alt="Lotte Finance" />
         </div>
         <img src="./public/lotte_finance_1.png" class="sm:hidden h-[410px]" alt="Lotte Finance" />
+
+        <div id="anchor-fqa" class="absolute bottom-20"></div>
       </section>
 
       <!-- FQA -->
@@ -895,7 +911,7 @@
       <div class="container-box">
         <div class="flex flex-col gap-2">
           <hr class="border-[rgba(255,255,255,0.4)]" />
-          <div class="flex justify-start sm:justify-between flex-col px-4 sm:px-0 sm:flex-row items-center text-white">
+          <div class="flex justify-between flex-col px-4 sm:px-0 sm:flex-row items-start sm:items-center text-white">
             <table class="flex-1 text-sm sm:text-base">
               <tr class="align-top">
                 <td><p class="font-semibold pb-2 sm:pb-4">Hotline:</p></td>
@@ -918,7 +934,7 @@
             <div
               class="border-t sm:border-l border-[rgba(255,255,255,0.4)] my-3 sm:my-0 w-full sm:w-0 sm:h-36 mx-auto"
             ></div>
-            <div class="flex-1 flex flex-col gap-1 sm:justify-center items-center">
+            <div class="flex-1 flex flex-col gap-1 justify-center items-start sm:items-center">
               <p class="font-semibold text-sm sm:text-base">Khám phá LOTTE Finance Mobile:</p>
               <div class="flex gap-1 items-center">
                 <img src="./public/qr.svg" class="w-[110px] h-[110px] shadow-sm mb-1" alt="QR" />

@@ -58,3 +58,18 @@ month.addEventListener("input", function () {
   setMonthValue();
   setInvoiceAmount();
 });
+
+var jumpToFormButtons = document.querySelectorAll(".jump-to-form");
+
+jumpToFormButtons.forEach(function (btn) {
+  btn.addEventListener("click", function () {
+    var form = document.getElementById("register-form");
+
+    form.scrollIntoView({ behavior: "smooth", block: "start" });
+
+    var firstInput = form.querySelector("input");
+    if (firstInput) {
+      firstInput.focus();
+    }
+  });
+});
